@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>经典数据结构算法演示</title>
+    <link rel="shortcut icon" href="favcion.ico" />
+    <link rel="stylesheet" href=" css/iconfont.css">
+    <link rel="stylesheet" href="../plug-in/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <aside class="left-bar" id="leftBar">
+            <div class="title">
+                <p>经典数据结构算法演示</p>
+            </div>
+            <nav class="nav">
+                <div class="item active"><a href=""><i class="iconfont icon-daohang2"></i>快速导航</a><i class="line"></i></div>
+                <ul class="nav-item" id="navItem">
+                    <li><a href="#bbs" class="active"><i class="iconfont icon-shequ"></i>基本结构</a></li>
+                    <li><a href="#sill"><i class="iconfont icon-blogger"></i>排序</a></li>
+                    <li><a href="#docs"><i class="iconfont icon-wendangdocument78"></i>图算法</a></li>
+                   
+                    <!--
+                    <li><a href="#design"><i class="iconfont icon-designer"></i>设计资源</a></li>
+                    <li><a href="#study"><i class="iconfont icon-xuexi1"></i>学无止境</a></li>
+                    <li><a href="#operation"><i class="iconfont icon-yunying"></i>网络运营</a></li>
+                    <li class="download"><a href=""><i class="iconfont icon-github"></i>源码下载</a></li>-->
+                </ul>
+                <div class="item comment"><a target="_blank" href="https://www.mosq.cn/liuyan.html"><i class="iconfont icon-liuyan"></i>留言</a></div>
+            </nav>
+        </aside>
+        <section class="main">
+            <div id="mainContent">
+                <!-- 手机端菜单 -->
+                <div id="menu-box">
+                   <div id="menu">
+                       <input type="checkbox" id="menu-form">
+                       <label for="menu-form" class="menu-spin">
+                        <div class="line diagonal line-1"></div>
+                        <div class="line horizontal"></div>
+                        <div class="line diagonal line-2"></div>
+                      </label>
+                    </div>
+                </div>
+                <!-- 基本结构 -->
+                <div class="box">
+                    <a href="#" name="bbs"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-shequ"></i>基本结构</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="implements/StackArray.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/fdu.jpg" alt="CNDS"> 栈：数组实现</div>
+                                <div class="desc">运算受限（后进先出）的线性表</div>
+                            </div>
+                        </a>
+                        <a href="implements/StackLL.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/haishi.jpg" alt="掘金"> 栈：链表实现</div>
+                                <div class="desc">运算受限（后进先出）的线性表</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="implements/QueueArray.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/tongji.jpg" alt="github"> 队列：数组实现</div>
+                                <div class="desc">运算受限（先进先出）的线性表</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="implements/QueueLL.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/shanghaiOcean.jpg" alt="stackoverflow"> 队列：链表实现</div>
+                                <div class="desc">运算受限（先进先出）的线性表</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 排序 -->
+                <div class="box">
+                    <a href="#" name="sill"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-blogger"></i>排序</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="implements/ComparisonSort.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/tianjin.jpg" alt="腾讯 AlloyTeam 团队"> 比较排序</div>
+                                <div class="desc">通过对数组中的元素进行比较来实现排序</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="implements/RadixSort.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/nakai.jpg" alt="腾讯 AlloyTeam 团队"> 基数排序</div>
+                                <div class="desc">透过键值的部份资讯，将要排序的元素分配至某些“桶”中实现排序</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="implements/HeapSort.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/wuhan.jpg" alt="ISUX"> 堆排序</div>
+                                <div class="desc">利用堆这种数据结构所设计的一种排序算法</div>
+                            </div>
+                        </a>
+                       
+                    </div>
+                </div>
+                <!-- 图算法 -->
+                <div class="box">
+                    <a href="" name="docs"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-wendangdocument78"></i>图算法</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="implements/BFS.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/qinghua.jpg" alt="jQuery"> 广度优先遍历</div>
+                                <div class="desc">图的搜索方法之一</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="implements/DFS.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/peking.jpg" alt="Bootstrap"> 深度优先遍历</div>
+                                <div class="desc">图的搜索方法之一</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="implements/DFS.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/hangtianhangkong.jpg" alt="Bootstrap"> 连通分量</div>
+                                <div class="desc">图的连通分量的目的，是为了确定从图中的一个顶点是否能到达图中的另一个顶点</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="implements/Dijkstra.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/people.jpg" alt="Bootstrap"> Dijkstra最短路径</div>
+                                <div class="desc">求单源、无负权的最短路</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="implements/Floyd.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/waiguoyu.jpg" alt="Bootstrap"> Floyd最短路径</div>
+                                <div class="desc">求多源、无负权边的最短路</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="implements/Prim.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/beijingligong.jpg" alt="Bootstrap"> Prim最小生成树</div>
+                                <div class="desc">可在加权连通图里搜索最小生成树</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="implements/Kruskal.html">
+                            <div class="item">
+                                <div class="logo"><img src="img/shifan.jpg" alt="Bootstrap"> Kruskal最小生成树</div>
+                                <div class="desc">可在加权连通图里搜索最小生成树</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+               
+                </div>
+                <footer class="footer">
+                    <div class="copyright">
+                        <div>
+                            冲冲冲
+                            <a href="https://www.mosq.cn">SHOU-qxy</a>
+                        </div>
+                    </div>
+                </footer>
+                <div id="fixedBar"><svg class="Zi Zi--BackToTop" title="回到顶部" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z"></path></svg></div>
+        </section>
+        <script src="js/jquery.js"></script>
+        <script>
+        var oMenu = document.getElementById('menu');
+        var oLeftBar = document.getElementById('leftBar');
+        var menuFrom = document.getElementById('menu-form');
+
+        oMenu.onclick = function() {
+            if (oLeftBar.offsetLeft == 0) {
+                oLeftBar.style.left = -249 + 'px';
+            }
+            else {
+                oLeftBar.style.left = 0;
+            }
+        }
+
+
+        // 监听页面宽度变化
+        window.onresize = function() {
+            judgeWidth();
+            // console.log(document.documentElement.clientWidth);
+        };
+
+        // 判断页面宽度
+        function judgeWidth() {
+            if (document.documentElement.clientWidth > 481) {
+                oLeftBar.style.left = 0;
+            } else {
+                oLeftBar.style.left = -249 + 'px';
+            }
+        }
+
+
+        var oNavItem = document.getElementById('navItem');
+        var aA = oNavItem.getElementsByTagName('a');
+        for (var i = 0; i < aA.length; i++) {
+            aA[i].onclick = function() {
+                for (var j = 0; j < aA.length; j++) {
+                    aA[j].className = '';
+                }
+                this.className = 'active';
+                if (oLeftBar.offsetLeft == 0) {
+                    if (document.documentElement.clientWidth <= 481) {
+                        oLeftBar.style.left = -249 + 'px';
+                        menuFrom.checked = false;
+
+                    }
+                }
+            }
+        }
+
+
+        $(window).scroll(function() {
+            if($(window).scrollTop() >= 200){
+                $('#fixedBar').fadeIn(300);
+            }else{
+                $('#fixedBar').fadeOut(300);
+            }
+        });
+        $('#fixedBar').click(function() {
+            $('html,body').animate({scrollTop:'0px'},800);
+        })
+        </script>
+</body>
+
+</html>
